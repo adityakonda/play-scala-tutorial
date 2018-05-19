@@ -1,0 +1,11 @@
+1.  running an application
+
+        sbt -run
+
+
+sbt run -jvm-debug 9999
+
+
+Question:
+
+What is HTTP 200 response.

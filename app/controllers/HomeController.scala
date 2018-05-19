@@ -19,9 +19,13 @@ class HomeController @Inject()(cc: ControllerComponents) (implicit assetsFinder:
    * a path of `/`.
    */
   def index = Action {
-    //Ok(views.html.index("Your new application is ready. - aditya"))
 
-    Ok("Hello World ...!!!")
+    Ok(views.html.index("Your new application is ready."))
+  }
+
+  def welcome(firstName: String, lastName: String) = Action{
+
+    Ok(views.html.home.welcome(firstName,lastName))
   }
 
 }
